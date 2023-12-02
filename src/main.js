@@ -12,7 +12,6 @@ import ToastService from "primevue/toastservice";
 
 import "./registerServiceWorker";
 
-import "./styles/base.css";
 import "primevue/resources/themes/lara-light-indigo/theme.css";
 import "primevue/resources/primevue.min.css";
 
