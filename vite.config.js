@@ -8,15 +8,15 @@ export default defineConfig({
     vue(),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: ["favicon.svg", "apple-touch-icon.png"],
+      includeAssets: ["favicon.svg", "robots.txt", "apple-touch-icon.png"],
       manifest: {
-        start_url: "/",
+        start_url: ".",
         display: "standalone",
         theme_color: "#ffffff",
         background_color: "#000000",
         name: "Ovcapp",
         short_name: "Ovcapp",
-        description: "Mi increíble aplicación Vue con PWA",
+        description: "Ovcapp (PWA)",
         icons: [
           {
             src: "goat-120.png",
