@@ -1,7 +1,8 @@
 <script setup>
 import { ref } from "vue";
 import RegisterUser from "./components/RegisterUser.vue";
-// import ServiceWorkerRef from "./ServiceWorkerRef.vue";
+import ServiceWorkerRef from "./ServiceWorkerRef.vue";
+import PwaInstaller from "./components/pwaInstaller.vue";
 
 const database = ref();
 const todos = ref([]);
@@ -12,8 +13,9 @@ const visibility = ref("all");
 
 <template>
   <div class="container">
+    <PwaInstaller />
     <Register-User></Register-User>
-    <!-- <Service-Worker-Ref /> -->
+    <Service-Worker-Ref />
   </div>
 </template>
 
