@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button id="installApp">Instalar Ovcapp</button>
+    <Button id="installApp">Instalar Ovcapp</Button>
   </div>
 </template>
 

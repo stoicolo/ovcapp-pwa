@@ -8,6 +8,8 @@ import PrimeVue from "primevue/config";
 import InputText from "primevue/inputtext";
 import Button from "primevue/button";
 import Toast from "primevue/toast";
+import Menubar from "primevue/menubar";
+
 import ToastService from "primevue/toastservice";
 
 import "./registerServiceWorker";
@@ -36,6 +38,7 @@ app.use(ToastService);
 app.component("InputText", InputText);
 app.component("Button", Button);
 app.component("Toast", Toast);
+app.component("Menubar", Menubar);
 
 app.use(pinia);
 app.mount("#app");

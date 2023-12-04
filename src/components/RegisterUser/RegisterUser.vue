@@ -21,8 +21,11 @@ const greet = () => {
 </script>
 
 <template>
-  <div class="card flex justify-content-center">
-    <form @submit="onSubmit" class="flex flex-column gap-2">
+  <div>
+    <form
+      @submit="onSubmit"
+      class="is-flex is-flex-direction-row is-justify-content-center is-align-content-center"
+    >
       <span class="p-float-label">
         <InputText
           id="email"
@@ -37,14 +40,10 @@ const greet = () => {
       <small class="p-error" id="text-error">{{
         errorMessage || "&nbsp;"
       }}</small>
-      <Button style="margin-top: 10px" @click="greet" label="Email" />
+      <Button @click="greet" label="Email" />
     </form>
     <Toast />
   </div>
 </template>
 
-<style scoped>
-.read-the-docs {
-  color: #888;
-}
-</style>
+<style scoped></style>
