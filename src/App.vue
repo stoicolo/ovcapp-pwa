@@ -11,11 +11,11 @@
 <script setup>
 import { ref } from "vue";
 
-import RegisterUser from "./components/RegisterUser/RegisterUser.vue";
-import ServiceWorkerRef from "./components/ServiceWorker/ServiceWorkerRef.vue";
-import BulmaNavBar from "./components/NavBar/BulmaNavBar.vue";
-import MenuBar from "./components/NavBar/BulmaNavBar.vue";
-import PWAInstaller from "./components/PWAInstaller/PWAInstaller.vue";
+import RegisterUser from "@/components/RegisterUser/RegisterUser.vue";
+import ServiceWorkerRef from "@/components/ServiceWorker/ServiceWorkerRef.vue";
+import BulmaNavBar from "@/components/NavBar/BulmaNavBar.vue";
+import MenuBar from "@/components/NavBar/BulmaNavBar.vue";
+import PWAInstaller from "@/components/PWAInstaller/PWAInstaller.vue";
 
 const items = ref([
   {

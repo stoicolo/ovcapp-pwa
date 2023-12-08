@@ -40,7 +40,7 @@ const greet = () => {
       <small class="p-error" id="text-error">{{
         errorMessage || "&nbsp;"
       }}</small>
-      <Button @click="greet" label="Email" />
+      <Button class="ml-2" @click="greet" label="Email" />
     </form>
     <Toast />
   </div>
