@@ -9,6 +9,7 @@ import InputText from "primevue/inputtext";
 import Button from "primevue/button";
 import Toast from "primevue/toast";
 import Menubar from "primevue/menubar";
+import Card from "primevue/card";
 
 import ToastService from "primevue/toastservice";
 
@@ -16,7 +17,8 @@ import "./registerServiceWorker";
 
 import "./style.css";
 import "primevue/resources/themes/lara-light-indigo/theme.css";
-import "primevue/resources/primevue.min.css";
+// import "primevue/resources/primevue.min.css";
+import "primeflex/primeflex.min.css";
 
 const app = createApp(App);
 const pinia = createPinia();
@@ -39,6 +41,7 @@ app.component("InputText", InputText);
 app.component("Button", Button);
 app.component("Toast", Toast);
 app.component("Menubar", Menubar);
+app.component("Card", Card);
 
 app.use(pinia);
 app.mount("#app");

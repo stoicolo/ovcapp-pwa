@@ -1,21 +1,15 @@
 <template>
   <div class="container">
-    <Menubar :model="items" class="mt-5" />
-    <PWAInstaller class="mt-5" />
-    <Register-User class="mt-5" />
-    <Service-Worker-Ref />
-    <BulmaNavBar />
+    <NavBar />
+    <AnalyticsPage />
   </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
 
-import RegisterUser from "@/components/RegisterUser/RegisterUser.vue";
-import ServiceWorkerRef from "@/components/ServiceWorker/ServiceWorkerRef.vue";
-import BulmaNavBar from "@/components/NavBar/BulmaNavBar.vue";
-import MenuBar from "@/components/NavBar/BulmaNavBar.vue";
-import PWAInstaller from "@/components/PWAInstaller/PWAInstaller.vue";
+import NavBar from "./components/NavBar/NavBar.vue";
+import AnalyticsPage from "./components/Analytics/AnalyticsPage.vue";
 
 const items = ref([
   {
@@ -79,7 +73,7 @@ const items = ref([
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   min-height: 100vh;
 }
 </style>

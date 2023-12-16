@@ -1,7 +1,5 @@
 <template>
-  <div class="card">
-    <Menubar :model="items" />
-  </div>
+  <Menubar :model="items" />
 </template>
 
 <script setup>

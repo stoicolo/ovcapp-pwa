@@ -2,10 +2,16 @@ body {
   font-family: var(--font-family);
   color: var(--text-color);
 
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   place-items: center;
+  width: 100vw;
+  
+}
+
+#app {
+  width: 100%;
   min-width: 320px;
   max-width: 1400px;
   min-height: 100vh;
